@@ -1,0 +1,23 @@
+/* Papildomos taisyklės, kad būtų gražiau atvaizduojama */
+img {
+    height: 400px;
+    padding-right: 30px;
+}
+
+article {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+
+    /* Papildoma taisyklė, kad būtų gražiau atvaizduojama */
+    div {
+        max-width: 700px;
+        flex-grow: 1;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    article {
+        flex-direction: row;
+    }
+}

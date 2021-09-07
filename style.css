@@ -1,0 +1,37 @@
+@charset "UTF-8";
+/* Papildomos taisyklės, kad būtų gražiau atvaizduojama */
+img {
+  height: 400px;
+  padding-right: 30px;
+}
+
+article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /* Papildoma taisyklė, kad būtų gražiau atvaizduojama */
+}
+
+article div {
+  max-width: 700px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+@media screen and (min-width: 500px) {
+  article {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+/*# sourceMappingURL=style.css.map */
